@@ -15,3 +15,50 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
+@import "font-awesome-sprockets";
+@import url('https://fonts.googleapis.com/css?family=Raleway:b');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.notice {
+  display: inline-block;
+}
+
+.alert {
+  display: inline-block;
+  padding-top: 9px;
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar-brand {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar-default {
+  background-color: white;
+  border-color: white;
+}
+.navbar-default .navbar-brand {
+  color: #5b89e5;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #5b89e5;
+}
+
+.footer-text {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px;
+  color: #5b89e5;
+}
