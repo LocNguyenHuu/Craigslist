@@ -4,9 +4,6 @@ Summary
 -------
 This repo contains a re-designed, responsive craigslist clone that was created to practice my skills in CSS as well as implementing various APIs into Rails apps.
 
-To view the website live please visit the following link:<br>
-https://craigslist-joyce.herokuapp.com/
-
 ![homepage](https://cloud.githubusercontent.com/assets/22533214/25117294/75a93ec0-23df-11e7-8560-c2fe6c380322.png)
 
 APIs/Gems:
