@@ -18,9 +18,11 @@ APIs/Gems:
 User Stories
 -------
 1. Users can login, logout and create an account.
-2. Users can view all posts and categories without logging in.
-3. Users can post a listing if logged in.
-4. Users can upload an image and address to their post if logged in.
+2. Users can view all posts without logging in.
+3. Users can view all posts within a category without loggin in.
+4. Users can post a listing if logged in.
+5. Users can upload an image and address to their post if logged in.
+6. Users can edit/update their post if logged in.
 
 ![show](https://cloud.githubusercontent.com/assets/22533214/25117292/75a8724c-23df-11e7-9f4b-0ed4c9898a0a.png)
 ![profile](https://cloud.githubusercontent.com/assets/22533214/25117295/75a99adc-23df-11e7-8119-3030ea75dabf.png)
