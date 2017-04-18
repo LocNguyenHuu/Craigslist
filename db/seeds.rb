@@ -10,3 +10,23 @@ joyce = User.create!({
   email: "Jawt94@gmail.com",
   password: "joyce123"
 })
+
+Category.create!({
+  category: "Housing"
+})
+
+Category.create!({
+  category: "For Sale"
+})
+
+Category.create!({
+  category: "Furniture"
+})
+
+Category.create!({
+  category: "Jobs"
+})
+
+Category.create!({
+  category: "Services"
+})

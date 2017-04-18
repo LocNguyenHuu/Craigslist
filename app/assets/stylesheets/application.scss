@@ -33,6 +33,10 @@ a:hover {
   text-decoration: none;
 }
 
+p {
+  font-size: 18px;
+}
+
 .btn,
 button,
 input[type="submit"],
@@ -41,7 +45,7 @@ input[type="button"] {
   display: inline-block;
   height: 42px;
   padding: 0 30px;
-  color: black;
+  color: white;
   text-align: center;
   font-size: 12px;
   font-weight: 600;
@@ -50,7 +54,7 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: white;
+  background-color: #337ab7;
   border-radius: 2px;
   border: 1px solid #888;
   cursor: pointer;
