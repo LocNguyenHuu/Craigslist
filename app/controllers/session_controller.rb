@@ -16,7 +16,7 @@ class SessionController < ApplicationController
   end
 
   def logout
-    session[:user_id] = nil
+    session.clear
     redirect_to posts_path
   end
 end

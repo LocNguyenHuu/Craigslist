@@ -34,8 +34,8 @@ def show
 end
 
 def destroy
-  if find_user.destroy
-    flash[:notice] = "Successfully deletd user!"
+  if current_user.id == @user.id
+    flash[:notice] = "Successfully deleted user!"
     redirect_to users_path
   else
     flash[:alert] = "Error deleting user!"
