@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170418021233) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "categories", force: :cascade do |t|
     t.string   "category"
     t.datetime "created_at", null: false
@@ -27,7 +30,7 @@ ActiveRecord::Schema.define(version: 20170418021233) do
     t.integer  "height"
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
-    t.index ["type"], name: "index_ckeditor_assets_on_type"
+    t.index ["type"], name: "index_ckeditor_assets_on_type", using: :btree
   end
 
   create_table "posts", force: :cascade do |t|
@@ -45,8 +48,8 @@ ActiveRecord::Schema.define(version: 20170418021233) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.index ["category_id"], name: "index_posts_on_category_id"
-    t.index ["user_id"], name: "index_posts_on_user_id"
+    t.index ["category_id"], name: "index_posts_on_category_id", using: :btree
+    t.index ["user_id"], name: "index_posts_on_user_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
@@ -55,7 +58,7 @@ ActiveRecord::Schema.define(version: 20170418021233) do
     t.string   "password_digest",            null: false
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
-    t.index ["username"], name: "index_users_on_username"
+    t.index ["username"], name: "index_users_on_username", order: { username: :desc }, using: :btree
   end
 
 end
