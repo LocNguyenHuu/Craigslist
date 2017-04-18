@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
   resources :categories, only: [:index, :show]
-  resources :articles
+  resources :posts
   resources :users, except: [:index]
 
   get '/session/login', to: 'session#login', as:'login'
