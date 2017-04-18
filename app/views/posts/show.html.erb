@@ -8,10 +8,10 @@
       </div>
     </div>
     <div id="post-show-2" class="col-xs-6">
-      <h2 class="text-left"><%= @post.title %> <span> <%=@post.created_at.strftime('%b %d, %Y') %></span></h2>
-      <h3 class="text-left"><%=number_to_currency(@post.cost)%></h3>
+      <h2 class="text-center"><%= @post.title %> <span> <%=@post.created_at.strftime('%b %d, %Y') %></span></h2>
+      <h3 class="text-center"><%=number_to_currency(@post.cost)%></h3>
+      <p class="text-center"><%= raw @post.body %></p>
       <%= image_tag @post.image.url %>
-      <h6 class="text-left"><%= raw @post.body %></h6>
     </div>
   </div>
 </div>

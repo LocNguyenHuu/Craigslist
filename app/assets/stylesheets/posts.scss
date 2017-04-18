@@ -7,7 +7,7 @@
   background-size: cover;
 	min-height: 650px;
   position: relative;
-  filter: blur(1px);
+  filter: blur(2px);
   z-index: 0;
   left: 0;
   right: 0;
@@ -98,6 +98,14 @@
 
 #post-show-2 {
   margin-top: 6%;
+}
+
+#post-show-2 p {
+	text-align: center;
+}
+
+#post-show-2 img {
+	padding-left: 10%;
 }
 
 .text-left span {
