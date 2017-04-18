@@ -16,24 +16,29 @@ class PostsController < ApplicationController
     @post = current_user.posts.new(post_params)
 
     if @post.save
-      flash[:notice] = "Successfully created a new post!"
+      flash[:notice] = "New post created"
       redirect_to posts_path(@post)
     else
-      flash[:alert] = "Error creating new post!"
+      flash[:alert] = "Error creating new post"
       render 'new'
     end
   end
 
   def edit
     @categories = Category.all
+    if authenticate
+      render 'edit'
+    else
+      flash[:alert] = "You can only edit your own post"
+    end
   end
 
   def update
     if @post.update(post_params)
-      flash[:notice] = "Succesfully updated post!"
+      flash[:notice] = "Post Updated"
       redirect_to posts_path(@post)
     else
-      flash[:alert] = "Error updating post!"
+      flash[:alert] = "Error updating post"
       render 'edit'
     end
   end
@@ -43,16 +48,16 @@ class PostsController < ApplicationController
 
   def destroy
     if find_post.destroy
-      flash[:notice] = "Successfully deleted post!"
+      flash[:notice] = "Post deleted"
       redirect_to posts_path
     else
-      flash[:alert] = "Error deleting post!"
+      flash[:alert] = "Error deleting post"
     end
   end
 
   private
     def post_params
-      params.require(:post).permit(:title, :body, :category_id)
+      params.require(:post).permit(:title, :body, :cost, :category_id, :image)
     end
 
     def find_post

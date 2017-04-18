@@ -53,3 +53,4 @@ gem 'font-awesome-sass'
 gem 'pry'
 gem 'ckeditor', '~>4.1'
 gem 'gravtastic'
+gem "paperclip"
