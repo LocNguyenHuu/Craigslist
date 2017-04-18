@@ -36,6 +36,9 @@ ActiveRecord::Schema.define(version: 20170418021233) do
     t.decimal  "cost"
     t.integer  "category_id"
     t.integer  "user_id"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "address"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
     t.string   "image_file_name"

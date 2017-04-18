@@ -54,3 +54,5 @@ gem 'pry'
 gem 'ckeditor', '~>4.1'
 gem 'gravtastic'
 gem "paperclip"
+gem 'figaro'
+gem 'geocoder'

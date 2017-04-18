@@ -6,6 +6,9 @@ class CreatePosts < ActiveRecord::Migration[5.0]
       t.decimal :cost
       t.references :category, foreign_key: :true
       t.references :user, foreign_key: :true
+      t.float :latitude
+      t.float :longitude
+      t.string :address
 
       t.timestamps
     end
