@@ -8,7 +8,7 @@ This repo contains a re-designed, responsive craigslist clone that was created t
 
 APIs/Gems:
 -------
-1. Image uploading using <href="https://github.com/thoughtbot/paperclip">paperclip</a> gem
+1. Image uploading using <a href="https://github.com/thoughtbot/paperclip">paperclip</a> gem
 2. <a href="https://github.com/thoughtbot/paperclip#image-processor">ImageMagick</a>, which is required for Paperclip.
 3. <a href="https://developers.google.com/maps/web/">Google Maps API</a> with the <a href="https://github.com/alexreisner/geocoder"> geocoder</a> gem
 4. <a href="https://www.omdbapi.com/">OMDB API</a>, Rails, React, CSS and HTML. This was completed as an attempt to practice my skills in react, as well as my skills in media queries/responsive web design.
