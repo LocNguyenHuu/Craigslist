@@ -4,7 +4,9 @@ class PostsController < ApplicationController
   before_action :authenticate, only: [:edit, :update, :destroy]
 
   def index
-    @posts = Post.order(created_at: :asc)
+    @posts = Post.search(params[:search])
+    @categories = Category.all
+    # @posts = Post.order(created_at: :asc)
   end
 
   def new
@@ -30,6 +32,7 @@ class PostsController < ApplicationController
       render 'edit'
     else
       flash[:alert] = "You can only edit your own post"
+      redirect_to posts_path
     end
   end
 

@@ -9,4 +9,13 @@ class Post < ApplicationRecord
   belongs_to :category
   belongs_to :user
 
+  def self.search(search)
+    if search
+        search = search.downcase
+        where("lower(title) LIKE ?", "%#{search}%")
+    else
+      all
+    end
+  end
+
 end
